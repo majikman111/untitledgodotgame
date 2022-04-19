@@ -1,0 +1,89 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=29 format=2]
+
+[sub_resource type="AnimationNodeAnimation" id=23]
+animation = "Attack1"
+
+[sub_resource type="AnimationNodeAnimation" id=21]
+animation = "Death"
+
+[sub_resource type="AnimationNodeAnimation" id=1]
+animation = "Fall"
+
+[sub_resource type="AnimationNodeAnimation" id=2]
+animation = "Hurt"
+
+[sub_resource type="AnimationNodeAnimation" id=3]
+animation = "Idle"
+
+[sub_resource type="AnimationNodeAnimation" id=4]
+animation = "Jump"
+
+[sub_resource type="AnimationNodeAnimation" id=5]
+animation = "Run"
+
+[sub_resource type="AnimationNodeAnimation" id=6]
+animation = "Walk"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=7]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=8]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=9]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=10]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=11]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=12]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=13]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=14]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=15]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=16]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=17]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=18]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=19]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=20]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=22]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=24]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=25]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=27]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=28]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
+
+[resource]
+states/Attack1/node = SubResource( 23 )
+states/Attack1/position = Vector2( 300, 20.4289 )
+states/Death/node = SubResource( 21 )
+states/Death/position = Vector2( -105.557, 204 )
+states/Fall/node = SubResource( 1 )
+states/Fall/position = Vector2( 300, 279 )
+states/Hurt/node = SubResource( 2 )
+states/Hurt/position = Vector2( 95, 204 )
+states/Idle/node = SubResource( 3 )
+states/Idle/position = Vector2( 300, 143 )
+states/Jump/node = SubResource( 4 )
+states/Jump/position = Vector2( 515, 279 )
+states/Run/node = SubResource( 5 )
+states/Run/position = Vector2( 698, 143 )
+states/Walk/node = SubResource( 6 )
+states/Walk/position = Vector2( 515, 149 )
+transitions = [ "Idle", "Walk", SubResource( 7 ), "Walk", "Run", SubResource( 8 ), "Run", "Walk", SubResource( 9 ), "Walk", "Idle", SubResource( 10 ), "Idle", "Fall", SubResource( 11 ), "Jump", "Fall", SubResource( 12 ), "Fall", "Idle", SubResource( 13 ), "Idle", "Jump", SubResource( 14 ), "Walk", "Jump", SubResource( 15 ), "Run", "Jump", SubResource( 16 ), "Idle", "Hurt", SubResource( 17 ), "Hurt", "Idle", SubResource( 18 ), "Hurt", "Fall", SubResource( 19 ), "Fall", "Hurt", SubResource( 20 ), "Hurt", "Death", SubResource( 22 ), "Idle", "Attack1", SubResource( 24 ), "Attack1", "Idle", SubResource( 25 ), "Run", "Attack1", SubResource( 27 ), "Jump", "Attack1", SubResource( 28 ), "Fall", "Attack1", SubResource( 29 ) ]
+start_node = "Idle"
+end_node = "Death"
+graph_offset = Vector2( -392.793, 52.6104 )
